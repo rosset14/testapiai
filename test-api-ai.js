@@ -7,9 +7,7 @@ var bodyParser = require('body-parser');
 
 var app = express();
 
-app.use(bodyParser.urlencoded({   // to support URL-encoded bodies
-    extended: true
-}));
+app.use(bodyParser.json());
 
 app.all('/', function (req, res){
 	console.log("hello");
