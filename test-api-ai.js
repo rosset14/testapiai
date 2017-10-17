@@ -15,6 +15,7 @@ app.all('/', function (req, res){
 	console.log("hello");
 	var response = "Réponse du serveur";
 	res.setHeader('Content-Type', 'application/json');
+	console.log(req.body);
 	res.send(JSON.stringify({
 		speech : response, 
 		displayText : response, 
