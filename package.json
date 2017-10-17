@@ -4,7 +4,8 @@
   "description": "test",
   "main": "test-api-ai.js",
   "scripts": {
-    "test": "echo \"Error: no tests \" && exit 1"
+    "test": "echo \"Error: no tests \" && exit 1",
+    "start": "node test-api-ai.js"
   },
   "author": "quentouf",
   "license": "GPLv3",
