@@ -18,20 +18,11 @@ app.all('/', function (req, res){
 	res.send(JSON.stringify({
 		speech : response, 
 		displayText : response, 
-		data:{
-                google:{
-                    expect_user_response: false,
-                    final_response: {
-                        speech_response: {
-                        text_to_speech: response
-                        }
-                    }
-                }
-            },
+		data:{},
             contextOut:[],
             source:"webhook"}));
 });
 
-var server = app.listen(3000, function() {
-  console.log('Running on 127.0.0.1:%s', server.address().port);
+app.listen((process.env.PORT || 3000), function (){
+	console.log("started!")
 });
