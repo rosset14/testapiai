@@ -1,0 +1,15 @@
+{
+  "name": "test",
+  "version": "0.0.1",
+  "description": "test",
+  "main": "test-api-ai.js",
+  "scripts": {
+    "test": "echo \"Error: no tests \" && exit 1"
+  },
+  "author": "quentouf",
+  "license": "GPLv3",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+  }
+}
