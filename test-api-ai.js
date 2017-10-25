@@ -13,7 +13,7 @@ app.all('/', function (req, res){
 	console.log("hello");
 	var response = "Réponse du serveur";
 	res.setHeader('Content-Type', 'application/json');
-	response += req.body.result.parameters."geo-city";
+	//response += req.body.result.parameters."geo-city";
 	res.send(JSON.stringify({
 		speech : response, 
 		displayText : response, 
